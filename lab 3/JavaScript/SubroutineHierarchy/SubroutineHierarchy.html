@@ -33,6 +33,7 @@
         //rotatingPoly();
         
         rotatingPoly();
+		
         graphics.save();
         graphics.fillStyle="red"; 
         graphics.translate(-2.5,2);
@@ -111,49 +112,48 @@
     function rotatingPoly() {
         //1P
         graphics.save();  // (It might be necessary to save/restore transform and color)
-        graphics.translate(1,-0.3);
+        graphics.translate(1.15,-0.35);
         graphics.rotate( (frameNumber*0.75) * Math.PI/180 );
-        graphics.scale(1.2, 1.2);
+        graphics.scale(0.3, 0.3);
         
         poly();
         graphics.restore();
         //1L
         graphics.save();  // (It might be necessary to save/restore transform and color)
-        graphics.translate(-1.3,0.4);
+        graphics.translate(-1.15,0.4);
         graphics.rotate( (frameNumber*0.75) * Math.PI/180 );
-        graphics.scale(1.2, 1.2);
+        graphics.scale(0.3, 0.3);
         poly();
         graphics.restore();
         //2P
         graphics.save();  // (It might be necessary to save/restore transform and color)
-        graphics.translate(-3.65,2.35);
+        graphics.translate(-3.5,2.35);
         graphics.rotate( (frameNumber*0.75) * Math.PI/180 );
-        graphics.scale(0.9, 0.9);
+        graphics.scale(0.25, 0.25);
         poly();
         graphics.restore();
         //2L
         graphics.save();  // (It might be necessary to save/restore transform and color)
-        graphics.translate(-1.65,1.75);
+        graphics.translate(-1.5,1.7);
         graphics.rotate( (frameNumber*0.75) * Math.PI/180 );
-        graphics.scale(0.9, 0.9);
+        graphics.scale(0.25, 0.25);
         poly();
         graphics.restore();
         //3P
         graphics.save();  // (It might be necessary to save/restore transform and color)
-        graphics.translate(3.3,2);
+        graphics.translate(3.4,1.95);
         graphics.rotate( (frameNumber*0.75) * Math.PI/180 );
-        graphics.scale(0.7, 0.7);
+        graphics.scale(0.2, 0.2);
         poly();
         graphics.restore();
         //3L
         graphics.save();  // (It might be necessary to save/restore transform and color)
-        graphics.translate(1.5,2.55);
+        graphics.translate(1.55,2.55);
         graphics.rotate( (frameNumber*0.75) * Math.PI/180 );
-        graphics.scale(0.7, 0.7);
+        graphics.scale(0.2, 0.2);
         poly();
         graphics.restore();
 
-        
     }
 
 
@@ -171,16 +171,15 @@
         graphics.fillStyle = "lime";
         graphics.lineWidth = 0.05;
         graphics.beginPath();
-        graphics.moveTo(0.15,0.45); // gora wierzcholek
-		graphics.lineTo(-0.15,0.3); //1
-		graphics.lineTo(-0.3,0);//2
-		graphics.lineTo(-0.25,-0.25);//3
-		graphics.lineTo(0,-0.5); //4
-		graphics.lineTo(0,-0.5);    // 5
-		graphics.lineTo(0.3,-0.5); //4
-		graphics.lineTo(0.55,-0.25);//3
-		graphics.lineTo(0.60,0); //2
-		graphics.lineTo(0.45,0.3);//1	
+        graphics.moveTo(1.28,1.53);
+		graphics.lineTo(0,2);
+		graphics.lineTo(-1.28,1.53);
+		graphics.lineTo(-1.96,0.34);
+		graphics.lineTo(-1.73,-1.00);
+		graphics.lineTo(-0.68,-1.87); 
+		graphics.lineTo(0.68,-1.87);
+		graphics.lineTo(1.73,-0.99);
+		graphics.lineTo(1.96,0.34); 	
 		graphics.closePath();
         graphics.stroke();
 		graphics.fill();

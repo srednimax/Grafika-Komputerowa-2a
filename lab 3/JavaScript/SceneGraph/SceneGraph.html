@@ -60,12 +60,12 @@
       p3P = new TransformedObject(poly);  
       p3L = new TransformedObject(poly);
       
-      p1P.setTranslation(1,-0.3).setScale(1.2,1.2);
-      p1L.setTranslation(-1.3,0.4).setScale(1.2,1.2);
-      p2P.setTranslation(-3.65,2.35).setScale(0.9,0.9);
-      p2L.setTranslation(-1.65,1.75).setScale(0.9,0.9);
-      p3P.setTranslation(3.3,2).setScale(0.7,0.7);
-      p3L.setTranslation(1.5,2.55).setScale(0.7,0.7);
+      p1P.setTranslation(1.15,-0.35).setScale(0.3,0.3);
+      p1L.setTranslation(-1.15,0.4).setScale(0.3,0.3);
+      p2P.setTranslation(-3.5,2.35).setScale(0.25,0.25);
+      p2L.setTranslation(-1.5,1.7).setScale(0.25,0.25);
+      p3P.setTranslation(3.4,1.95).setScale(0.2,0.2);
+      p3L.setTranslation(1.55,2.55).setScale(0.2,0.2);
 
       world.add(p1P);
       world.add(p1L);
@@ -255,16 +255,15 @@
         graphics.fillStyle = "lime";
         graphics.lineWidth = 0.05;
         graphics.beginPath();
-        graphics.moveTo(0.15,0.45); // gora wierzcholek
-		graphics.lineTo(-0.15,0.3); //1
-		graphics.lineTo(-0.3,0);//2
-		graphics.lineTo(-0.25,-0.25);//3
-		graphics.lineTo(0,-0.5); //4
-		graphics.lineTo(0,-0.5);    // 5
-		graphics.lineTo(0.3,-0.5); //4
-		graphics.lineTo(0.55,-0.25);//3
-		graphics.lineTo(0.60,0); //2
-		graphics.lineTo(0.45,0.3);//1	
+        graphics.moveTo(1.29,1.53);
+		graphics.lineTo(0,2);
+		graphics.lineTo(-1.29,1.53);
+		graphics.lineTo(-1.97,0.35);
+		graphics.lineTo(-1.73,-1);
+		graphics.lineTo(-0.68,-1.88);
+		graphics.lineTo(0.68,-1.88);
+		graphics.lineTo(1.73,-1);
+		graphics.lineTo(1.97,0.35);	
 		graphics.closePath();
         graphics.stroke();
 		graphics.fill();
