@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+"http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg"
+xmlns:xlink="http://www.w3.org/1999/xlink"
+width="800px" height="600px"
+viewBox="0 0 800 600"
+preserveAspectRatio="xMidYMid">
+<defs>
+    
+    <g id = "fig">
+    <path d="M 550,225 591,240 614,278 606,322 572,351 527,351 493,322 485,278 508,240 Z" 
+          fill="lime" stroke="black" stroke-width="3">
+        <animateTransform attributeName = "transform" type = "rotate"
+                        from = "0 550 290" to = "360 550 290"
+                        dur = "6s" 
+                        repeatCount = "indefinite" />
+    </path>
+    <path d="M 270,145 311,160 334,198 326,242 292,271 247,271 213,242 205,198 228,160 Z"
+          fill="lime" stroke="black" stroke-width="3">
+        <animateTransform attributeName = "transform" type = "rotate"
+                        from = "0 270 210" to = "360 270 210"
+                        dur = "6s" 
+                        repeatCount = "indefinite" />
+    </path>
+        <rect  x = "310" y = "125" height = "25" width = "300" transform = "rotate(15)" fill ="red"/>
+    </g>
+    <g id = "tri">
+        <polygon points = "400,250 355,500 445,500"/>
+    </g>
+
+</defs> 
+<rect width = "800" height = "600" fill ="none" stroke = "black" stroke-width ="5"/>
+<use xlink:href = "#fig" transform ="translate(0,120)" />
+<use xlink:href = "#tri" transform ="translate(0,120)" fill = "blue" />
+
+<use xlink:href = "#fig" transform = "translate(-150,-25) scale(0.75)"/>
+<use xlink:href = "#tri" transform = "translate(-150,-25) scale(0.75)" fill = "purple" />
+
+<use xlink:href = "#fig" transform = "translate(450,-20) scale(0.50)"/>
+<use xlink:href = "#tri" transform = "translate(450,-20) scale(0.50)" fill = "green" />
+      
+</svg>
