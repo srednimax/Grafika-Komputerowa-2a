@@ -50,7 +50,7 @@ public class Lab5 extends GLJPanel implements GLEventListener, KeyListener {
 
     //------------------- TODO: Complete this section! ---------------------
 
-    private int objectNumber = 4;        // Which object to draw (1 ,2, 3, 4, 5, or 6)?
+    private int objectNumber = 1;        // Which object to draw (1 ,2, 3, 4, 5, or 6)?
     //   (Controlled by number keys.)
 
     private boolean useAnaglyph = false; // Should anaglyph stereo be used?
